@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sweet Treats Bakery</title>
+</head>
+<body>
+    <header>
+        <h1><i>Welcome to Reya's Bakery</i></h1>
+        <img src="bakery.jpeg" height=20; alt="Bakery img" class="bakery-image">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="favorite-section">
+        <h2>Your Favorite Baked Goods</h2>
+        <p>We bake fresh bread, pastries, and cakes every day!</p>
+    </section>
+
+    <section id="menu" class="section-style">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="breads.html">Breads</a></li>
+            <li><a href="cakes.html">Cakes</a></li>
+            <li><a href="pastries.html">Pastries</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+        </ul>
+        <button id="showSpecials">Show Today's Specials</button>
+        <div id="specials" style="display:none;">
+            <h3>Today's Specials:</h3>
+            <ul>
+                <li>Chocolate Cake</li>
+                <li>Apple Pie</li>
+                <li>Croissants</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@reyabakery.com</p>
+        <p>Phone: +91 1234567890</p>
+
+    <h3>Login / Register</h3>
+    <form id="loginForm">
+        <h4>Login</h4>
+        <label for="loginEmail">Email:</label>
+        <input type="email" id="loginEmail" required>
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <form id="registerForm" style="margin-top: 20px;">
+        <h3>Register</h3>
+        <label for="registerEmail">Email:</label>
+        <input type="email" id="registerEmail" required>
+        <label for="registerPassword">Password:</label>
+        <input type="password" id="registerPassword" required>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" required>
+        <button type="submit">Register</button>
+    </form>
+    </section>
+
+    <div id="login-popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <span class="close" onclick="closeLoginPopup()">&times;</span>
+            <p>You have successfully logged in!</p>
+        </div>
+    </div>
+    
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>You have successfully registered!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Reya's Bakery</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
